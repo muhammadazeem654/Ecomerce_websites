@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+          <img src="img/logo1.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class='fa fa-bars'></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ml-auto">
+               
+                
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+             
+              <li class="nav-item">
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li>
+              <i class='fa fa-search'></i>
+              <i class="fa fa-shopping-bag"></i>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+            <div class="row mt-5 gx-3">
+                <!-- left side div  -->
+                <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                    <div class="card p-4">
+                        <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+                        <div class="row">
+                            <!-- cart img div  -->
+                            <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                <img src="img/shop/6.jpg" class="img-fluid" alt="cart images ">
+
+                            </div>
+
+
+                            <!-- cart product details  -->
+                            <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                            <div class="row">
+                                <!-- product name  -->
+                                <div class="col-6 card tittle">
+                                    <h1 class="mb-4 "product_name>Winter Coat</h1>
+                                    <p class="mb-2">COAT - WINTER</p>
+                                    <p class="mb-2">COLOR: MEHROON</p>
+                                    <P class="mb-3">SIZE: M</P>
+                                </div>
+
+                                <!-- quantitty increment decrement  -->
+                                <div class="col-6">
+                                    <ul class="pagination justify-content-end set_quantity">
+                                        <li class="page-item">
+                                            <button class="page-link" onclick="decreaseNumber('textbox','itemnum')"><i class='fa fa-minus'></i></button>
+                                        </li>
+                                        <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox">
+                                        </li>
+                                        <li class="page-item">
+                                            <button class="page-link" onclick="increaseNumber('textbox','itemnum')"><i class='fa fa-plus'></i>
+                                            </button>
+                                        </li>
+                                      </ul> 
+                                </div>
+                            </div>
+                          <!-- remove move or price -->
+                          <div class="row">
+                            <div class="col-8 d-flex justify-content-between remove_wish">
+                                <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                                <p><i class="fas fa-heart"></i>MOVE TO WHISLIST</p>
+                            </div>
+                            <div class="col-4 d-flex justify-content-end price_money">
+                             <h3>$ <span id="itemnum">0.00</h3>
+                            </div>
+                          </div>
+                            </div>
+                        </div> 
+                    </div>
+                   <hr>
+         <!-- second cart  -->  
+
+         <div class="card p-4">
+            <h2 class="py-4 font-weight-bold">Cart (2 items)</h2>
+            <div class="row">
+                <!-- cart img div  -->
+                <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                    <img src="img/shop/1.jpg" class="img-fluid" alt="cart images ">
+
+                </div>
+
+
+                <!-- cart product details  -->
+                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                <div class="row">
+                    <!-- product name  -->
+                    <div class="col-6 card tittle">
+                        <h1 class="mb-4 "product_name>T-Shirts</h1>
+                        <p class="mb-2">SHIRT - SUMMER</p>
+                        <p class="mb-2">COLOR: BLUE</p>
+                        <P class="mb-3">SIZE: M</P>
+                    </div>
+
+                    <!-- quantitty increment decrement  -->
+                    <div class="col-6">
+                        <ul class="pagination justify-content-end set_quantity">
+                            <li class="page-item">
+                                <button class="page-link" onclick="decreaseNumber('textbox1','itemnum1')"> <i class='fa fa-minus'></i></button>
+                            </li>
+                            <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1">
+                            </li>
+                            <li class="page-item">
+                                <button class="page-link" onclick="increaseNumber('textbox1','itemnum1')"><i class='fa fa-plus'></i></button>
+                            </li>
+                          </ul> 
+                    </div>
+                </div>
+              <!-- remove move or price -->
+              <div class="row">
+                <div class="col-8 d-flex justify-content-between remove_wish">
+                    <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                    <p><i class="fas fa-heart"></i>MOVE TO WHISLIST</p>
+                </div>
+                <div class="col-4 d-flex justify-content-end price_money">
+                 <h3>$ <span id="itemnum1">0.00</h3>
+                </div>
+              </div>
+                </div>
+            </div>
+
+
+                                                   
+
+
+        </div>
+
+          </div>
+               <!-- right side div  -->
+            <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+            <div class="right_side p-3 shadow bg-white">
+                <h2 class="product_name mb-5">The Total Amount Of</h2>
+            <div class="price_indiv d-flex justify-content-between">
+                 <p>Product amount</p>
+                 <p>$<span id="product_total_amt">0.00</span></p>
+            </div>
+            <div class="price_indiv d-flex justify-content-between">
+                <p>Shipping charge</p>
+                <p>$<span id="shipping">50.0</span> </p>
+           </div>
+           <hr />
+           <div class="total-amt d-flex justify-content-between font-weight-bold">
+            <p>The total amount of (including VAT)</p>
+            <p>$<span id="total_cart_amt">0.00</span></p>
+           </div>
+          <a href="checkout/checkout.html"> <button class="btn btn-primary text-uppercase">checkout</button></a>
+            </div>
+            <!-- Discount code part  -->
+            <div class="discount_code mt-3 shadow ">
+                <div class="card">
+                    <div class="card-body">
+                        <a class="d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Add a discount code (optional)
+                            <span><i class="fas fa-chevron-down pt-1"></i></span>
+                        </a>
+                        <div class="collapse" id="collapseExample">
+                            <div class="mt-3">
+                                <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+                                <small id="error_trw" class="text-dark mt-3">code is jimmy</small>
+                            </div>
+                            <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- discount code end  -->
+                     <div class="mt-3 shadow p-3 bg-white">
+                        <div class="pt-4">
+                            <h5 class="mb-4">Expected delivery date</h5>
+                            <p>December 21st 2022 - December 25th 2022</p>
+                        </div>
+                     </div>
+
+
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer1 col-lg-3 col-md-6 col-12">
+         <img src="img/logo2.png" alt="">
+         <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur, eveniet aliquid facere inventore dignissimos ex dolor eum.</p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-2">Featured</h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#">men</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">boys</a></li>
+          <li><a href="#">girls</a></li>
+          <li><a href="#">new arrivals</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">clothes</a></li>
+  
+  
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-2">Contact Us</h5>
+       <div>
+        <h6 class="text-uppercase">Address</h6>
+        <p>123 STREET NAME, CITY, PAKISTAN</p>
+       </div>
+       <div>
+        <h6 class="text-uppercase">Phone</h6>
+        <p>(123) 456-7890</p>
+       </div>
+       <div>
+        <h6 class="text-uppercase">Email</h6>
+        <p>MAil@EXAMPLE.COM</p>
+       </div>
+      </div>
+  
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 class="pb-2">Instagram</h5>
+       <div class="row">
+        <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+        <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+        <img class="img-fluid w-25 h-00 m-2" src="img/insta/3.jpg" alt="">
+        <img class="img-fluid w-25 h-00 m-2" src="img/insta/4.jpg" alt="">
+        <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+       </div>
+      </div>
+    </div>
+  
+    <div class="copyright mt-5">
+  <div class="row container mx-auto">
+    <div class="col-lg-3 col-md-6 col-12 mb-4">
+      <img src="img/payment.png" alt="">
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+      <p>rymo eCommerce © 2022. All Right Reserved</p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+     <a href="#"><i class='fab fa-facebook-f'></i></a>
+     <a href="#"><i class='fab fa-twitter'></i></a>
+     <a href="#"><i class='fab fa-linkedin-in'></i></a>
+    </div>
+  </div>
+    </div>
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
+   crossorigin="anonymous"></script>
+
+
+<a href="btn">
+<script type="text/javascript">
+
+//console.log(shipping);
+
+var product_total_amt = document.getElementById('product_total_amt');
+var shipping = document.getElementById('shipping');
+//console.log(shipping);
+var total_cart_amt = document.getElementById('total_cart_amt');
+var discountCode = document.getElementById('discount_code1');
+
+    const decreaseNumber = (incdec,itemprice) => {
+        var itemnum = document.getElementById(incdec);
+        var itemprice = document.getElementById(itemprice);
+        console.log(itemprice.innerHTML);
+       //  console.log(itemnum.value);
+   
+  
+       if(itemnum.value <= 0){
+        itemnum.value = 0;
+        alert('Negative quantity not allowed')
+       }else{
+        itemnum.value = parseInt(itemnum.value) - 1;
+        itemnum.style.background = '#fff';
+        itemnum.style.color = '#000';
+        itemprice.innerHTML = parseInt(itemprice.innerHTML ) - 15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) -15;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 50;
+       }
+       } 
+
+
+       const increaseNumber = (incdec,itemprice) => {
+        var itemnum = document.getElementById(incdec);
+        var itemprice = document.getElementById(itemprice);
+       //  console.log(itemnum.value);
+
+  
+       if(itemnum.value >= 5){
+        itemnum.value = 5;
+        alert('max 5 allowed');
+        itemnum.style.background = 'red';
+        itemnum.style.color = '#fff';
+       }else{
+        itemnum.value = parseInt(itemnum.value) + 1;
+        itemprice.innerHTML = parseInt(itemprice.innerHTML ) +15;
+        product_total_amt.innerHTML = parseInt(product_total_amt.innerHTML) +15;
+        total_cart_amt.innerHTML = parseInt(product_total_amt.innerHTML) + 50;
+       }
+       } 
+
+
+
+       const discount_code = () => {
+        let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+        let error_trw = document.getElementById('error_trw');
+        if(discountCode.value === 'jimmy'){
+            let newtotalamt = totalamtcurr - 15;
+            total_cart_amt.innerHTML = newtotalamt;
+            error_trw.innerHTML = "Hurray! code is valid";
+        }else{
+            error_trw.innerHTML = "TryAgain! Valid code is jimmy.";
+        }
+       }
+</script></a>
+  </body>
+</html>
